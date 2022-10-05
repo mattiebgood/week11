@@ -1,9 +1,15 @@
 //alert("connected");
-//declare variables
 
-const user_input = document.getElementById("your_name").value;
-console.log(user_input);
+
+let myinput = document.getElementById("name1");
+// myinput.value = "Will";
+
 
 function sayHello(){
-    console.log("hi");
+    //console.log("hi");
+    //get the name from the input box
+    let inputname = myinput.value;
+    console.log("name is " + inputname);
+    const msg = 'Hello ${inputname}!';
+    console.log("message is " + msg);
 }
